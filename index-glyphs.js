@@ -74,7 +74,7 @@ function markFullyIndexed(topInscriptionNum) {
     storage.syncedToNum = topInscriptionNum
     storage.latestOffset = 0
     fs.writeFileSync(STORAGE_FILE, JSON.stringify(storage, null, 2))
-    //updateGithub()
+    updateGithub()
 }
 
 let topInscriptionNum
